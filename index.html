@@ -11,35 +11,43 @@
 
 <body>
     <header>
-        <figure class="picture">
-            <a class="picture__link"
-                href="https://www.freepik.com/free-ai-image/cartoon-man-wearing-glasses_126271319.htm#fromView=search&page=1&position=22&uuid=40379ce0-c852-4222-9274-d2aa07f6dd44"
-                target="_blank">
-                <img class="picture__img" src="./assets/img/profile.jpg" alt="photo de profil" />
-            </a>
-            <figcaption class="picture__caption">Nytaneliah</figcaption>
-        </figure>
-
-        <h1>Développeur Web Junior</h1>
-
+        <section class="banner">
+            <figure class="banner__picture">
+                <a class="banner__link"
+                    href="https://www.freepik.com/free-ai-image/cartoon-man-wearing-glasses_126271319.htm#fromView=search&page=1&position=22&uuid=40379ce0-c852-4222-9274-d2aa07f6dd44"
+                    target="_blank">
+                    <img class="banner__img" src="./assets/img/profile.jpg" alt="photo de profil" />
+                </a>
+            </figure>
+            <h1>Nytaneliah</h1>
+            <h2>Développeur web junior</h2>
+        </section>
         <address class="contact">
-            <a class="contact__link" href="https://maps.app.goo.gl/BBrZw9ot716iPgSx5" target="_blank">
-                Chemin de Cugurou<br>
-                11190 Bugarach
-            </a>
-            <a class="contact__link" href="mailto:nytaneliah@gmail.com">
-                nytaneliah@gmail.com
-            </a>
-            <a class="contact__link" href="tel:0678912345">
-                0678912345
-            </a>
+            <div class="contact__item">
+                <a class="contact__link" href="https://maps.app.goo.gl/BBrZw9ot716iPgSx5" target="_blank">
+                    <p class="contact__address">Chemin de Cugurou<br>
+                        11190 Bugarach</p>
+                </a>
+            </div>
+            <div class="contact__item">
+                <a class="contact__link" href="mailto:nytaneliah@gmail.com">
+                    <p class="contact__email">nytaneliah@gmail.com</p>
+                </a>
+            </div>
+            <div class="contact__item">
+                <a class="contact__link" href="tel:0678912345">
+                    <p class="contact__tel">0678912345</p>
+                </a>
+            </div>
         </address>
     </header>
     <main>
-        <!-- La partie main est partagée en deux parties verticales la sidebar à gauche et le core à droite -->
+        <!-- La partie main est partagée en deux zones verticales, la sidebar à gauche et le core à droite -->
         <section class="sidebar">
             <article class="sidebar__block">
-                <h2 class="sidebar__title">A propos</h2>
+                <div class="sidebar__text-box">
+                    <h3 class="sidebar__title">A propos</h3>
+                </div>
                 <p class="sidebar__paragraph">
                     Jeune développeur web, je combine ma passion pour les technologies durables avec mes compétences en
                     développement front-end et back-end. Maîtrisant HTML et CSS, je suis prêt à contribuer à votre
@@ -50,7 +58,9 @@
             </article>
 
             <article class="sidebar__block">
-                <h2 class="sidebar__title">Langues parlées</h2>
+                <div class="sidebar__text-box">
+                    <h3 class="sidebar__title">Langues parlées</h3>
+                </div>
                 <ul class="sidebar__list">
                     <li class="sidebar__item">Français - Langue maternelle</li>
                     <li class="sidebar__item">Anglais - Avancé</li>
@@ -59,7 +69,10 @@
             </article>
 
             <article class="sidebar__block">
-                <h2 class="sidebar__title">Centres d'intérêt</h2>
+                <div class="sidebar__text-box">
+
+                    <h3 class="sidebar__title">Centres d'intérêt</h3>
+                </div>
                 <ul class="sidebar__list">
                     <li class="sidebar__item">Permaculture</li>
                     <li class="sidebar__item">Jeux de société</li>
@@ -72,11 +85,13 @@
 
         <section class="core">
             <article class="core__block">
-                <h2 class="core__title">Expériences professionnelles</h2>
+                <div class="core__text-box">
+                    <h3 class="core__title">Expériences professionnelles</h3>
+                </div>
 
                 <!-- <article class="core__experience">
-                    <h3 class="core__subtitle"></h3>
-                    <p>Dates</p>
+                    <h4 class="core__subtitle"></h4>
+                    <p class="core__date">Dates</p>
                     <ul class="core__list">
                         <li class="core__item">Mission</li>
                         <li class="core__item">Mission</li>
@@ -84,8 +99,8 @@
                 </article> -->
 
                 <article class="core__experience">
-                    <h3 class="core__subtitle">Chargé de recouvrement B2B chez Sersi Système</h3>
-                    <p>De 2024 à maintenant</p>
+                    <h4 class="core__subtitle">Chargé de recouvrement B2B chez Sersi Système</h4>
+                    <p class="core__date">De 2024 à maintenant</p>
                     <ul class="core__list">
                         <li class="core__item">Création du poste recouvrement pour une PME</li>
                         <li class="core__item">Relance téléphonique et email, mises en demeure</li>
@@ -94,8 +109,8 @@
                 </article>
 
                 <article class="core__experience">
-                    <h3 class="core__subtitle">Chargé de recouvrement B2B chez Adecco Group France</h3>
-                    <p>De 2021 à 2024</p>
+                    <h4 class="core__subtitle">Chargé de recouvrement B2B chez Adecco Group France</h4>
+                    <p class="core__date">De 2021 à 2024</p>
                     <ul class="core__list">
                         <li class="core__item">Relance grands comptes, mises en demeure</li>
                         <li class="core__item">Suivi balance âgée</li>
@@ -104,8 +119,8 @@
                 </article>
 
                 <article class="core__experience">
-                    <h3 class="core__subtitle">Employé commercial chez Leclerc Drive</h3>
-                    <p>De 2018 à 2020</p>
+                    <h4 class="core__subtitle">Employé commercial chez Leclerc Drive</h4>
+                    <p class="core__date">De 2018 à 2020</p>
                     <ul class="core__list">
                         <li class="core__item">Préparation de commandes</li>
                         <li class="core__item">Service clientèle</li>
@@ -113,8 +128,8 @@
                 </article>
 
                 <article class="core__experience">
-                    <h3 class="core__subtitle">Photographe en Auto-entreprise</h3>
-                    <p>De 2013 à 2017</p>
+                    <h4 class="core__subtitle">Photographe en Auto-entreprise</h4>
+                    <p class="core__date">De 2013 à 2017</p>
                     <ul class="core__list">
                         <li class="core__item">Mariage, événementiel, portrait</li>
                         <li class="core__item">Retouche, mise en page, édition</li>
@@ -123,45 +138,49 @@
             </article>
 
             <article class="core__block">
-                <h2 class="core__title">Diplômes/Formations</h2>
-
+                <div class="core__text-box">
+                    <h3 class="core__title">Diplômes/Formations</h3>
+                </div>
                 <!-- <article class="core__experience">
-                    <h3 class="core__subtitle"></h3>
+                    <h4 class="core__subtitle"></h4>
                     <p>Dates</p>
                     <p>Nom de l'école</p>
                 </article> -->
 
                 <article class="core__experience">
-                    <h3 class="core__subtitle">Certificat de Compétences Professionelles Développeur Web et Web Mobile
-                    </h3>
-                    <p>De 2024 à maintenant</p>
-                    <p>Centre Européen de Formation</p>
+                    <h4 class="core__subtitle">Certificat de Compétences Professionelles Développeur Web et Web Mobile
+                    </h4>
+                    <p class="core__date">De 2024 à maintenant</p>
+                    <p class="core__place">Centre Européen de Formation</p>
                 </article>
 
                 <article class="core__experience">
-                    <h3 class="core__subtitle">Licence en Théologie Protestante
-                        (non validée)</h3>
-                    <p>De 2012 à 2017</p>
-                    <p>Faculté Adventiste de Théologie, Collonges-/s-Salève - Université de Strasbourg</p>
+                    <h4 class="core__subtitle">Licence en Théologie Protestante
+                        (non validée)</h4>
+                    <p class="core__date">De 2012 à 2017</p>
+                    <p class="core__place">Faculté Adventiste de Théologie, Collonges-/s-Salève - Université de
+                        Strasbourg</p>
                 </article>
 
                 <article class="core__experience">
-                    <h3 class="core__subtitle">Licence Méthodes informatisées appliquées
-                        à la gestion des entreprises (non validée)</h3>
-                    <p>De 2006 à 2009</p>
-                    <p>Université Paris-Sud XI, Orsay</p>
+                    <h4 class="core__subtitle">Licence Méthodes informatisées appliquées
+                        à la gestion des entreprises (non validée)</h4>
+                    <p class="core__date">De 2006 à 2009</p>
+                    <p class="core__place">Université Paris-Sud XI, Orsay</p>
                 </article>
 
                 <article class="core__experience">
-                    <h3 class="core__subtitle">Baccalauréat Scientifique, Sciences de
-                        l’ingénieur</h3>
-                    <p>En 2005</p>
-                    <p>Lycée Notre Dame de Sion, Évry</p>
+                    <h4 class="core__subtitle">Baccalauréat Scientifique, Sciences de
+                        l’ingénieur</h4>
+                    <p class="core__date">En 2005</p>
+                    <p class="core__place">Lycée Notre Dame de Sion, Évry</p>
                 </article>
             </article>
 
-            <article class="core__block">
-                <h2 class="core__title">Compétences</h2>
+            <article class="core__block--last">
+                <div class="core__text-box">
+                    <h3 class="core__title">Compétences</h3>
+                </div>
                 <article class="core__experience">
                     <ul class="core__list">
                         <li class="core__item">HTML 5 - Débutant</li>
